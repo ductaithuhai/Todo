@@ -1,0 +1,80 @@
+/*Reset Css*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.text-white{
+    color: white !important;
+}
+
+#header {
+    position: fixed;
+    top:0;
+    left:0;
+    height: 46px;
+    width:100%;
+    background-color: white;
+    z-index:1000;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav,.subnav{
+    list-style-type: none;
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+
+#nav li{
+    position: relative;
+}
+
+#nav .subnav  a{
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav li a{
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav  .subnav li:hover  a,
+#nav >li:hover> a{
+    color: black;
+    background-color: grey;
+}
+
+#nav .subnav{
+    display: none;
+    min-width: 160px;
+    position:  absolute;
+    top:100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 3px 3px 3px grey;
+    
+}
+
+#nav .nav-arrow-down{
+    font-size: smaller;
+}
