@@ -13,99 +13,21 @@
     </head>
 </head>
 <body>
-    <div id="main">
-        <div id="header">
-            <ul id="nav">
-                <li><a href="#">Menu</a></li>
-                <li><a href="#list-color">List color</a></li>
-                <li><a href="#to-do-list-1">To-do list 1</a></li>
-                <li>
-                    <a href="#list">List
-                            <i class="nav-list-more ti-more"></i> 
-                    </a>
-                    <ul class="subnav">
-                        <li><a href="#pin">Pin</a></li>
-                        <li><a href="#addtf">Add to favorite</a></li>
-                        <li><a href="#duplicate">Duplicate</a></li> 
-                    </ul>
-                </li>
-                <li><a href="#calendar">Calendar</a></li>
-            </ul>
-            <div id="menu-bt" class="menu-btn">
-                <i class="menu-icon ti-menu"></i>
-            </div>
-        </div>
-        <div id="sub-header">
-            <div class="search-btn">
-                <i class="search-icon ti-search"></i>
-            </div>
-        </div>
-        <!-- <div id="content">
-            <div id="band" class="about-section">
-                <h2 class="about-heading">The band</h2>
-                <p class="about-subhead">We love music</p>
-                <p class="about-content">We have created a fictional band website. Lorem ipsum dolor sit amet,    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>    
-                <div class="about-member">
-                    <div class="col-3rd  member-list">
-                        <p class="member-name">Name</p>
-                        <img src="./assets/img/about/bandmember.jpeg" alt="Name" class="member-img">
-                    </div>
-                    <div class="col-3rd member-list">
-                        <p class="member-name">Name</p>
-                        <img src="./assets/img/about/bandmember.jpeg" alt="Name" class="member-img">
-                    </div>
-                    <div class="col-3rd member-list">
-                        <p class="member-name">Name</p>
-                        <img src="./assets/img/about/bandmember.jpeg" alt="Name" class="member-img">
-                    </div>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div id="tour" class="tour-father">
-                <div class="tour-section">
-                    <h2 class="tour-heading text-white">TOUR DATES</h2>
-                    <p class="tour-content text-white">Remember to book your tickets!</p>
-                    <ul class="ticket-list">
-                        <li>September <span class="sold-out">Sold out</span></li>
-                        <li>October <span class="sold-out">Sold out</span></li>
-                        <li>November <span class="quantity">3 </span></li>
-                    </ul>
-                    <div class="row places-list">
-                        <div class="col col-3rd place">
-                            <img src="./assets/img/places/newyork.jpeg" alt="New York" class="place-img"></img> 
-                            <div class="place-body">
-                                <h3 class="place-heading">New York</h3>
-                                <p class="place-time">Fri 27 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-tickets s-full-w" >Buy Tickets</button>
-                            </div>
-                        </div>
-                        <div class="col col-3rd place ">
-                            <img src="./assets/img/places/paris.jpeg" alt="Paris" class="place-img"></img> 
-                            <div class="place-body">
-                                <h3 class="place-heading">Paris</h3>
-                                <p class="place-time">Sat 28 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-tickets s-full-w" >Buy Tickets</button>
-                            </div>
-                        </div>
-                        <div class="col col-3rd place ">
-                            <img src="./assets/img/places/sanfran.jpeg" alt="San Francisco" class="place-img"></img> 
-                            <div class="place-body">
-                                <h3 class="place-heading">San Francisco</h3>
-                                <p class="place-time">Sun 29 Nov 2016</p>
-                                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-tickets s-full-w " >Buy Tickets</button>
-                            </div>
-                        </div>
-                        <div class="clear"></div> 
-                    </div> 
-                </div>
-            </div>
-        </div> -->
-        <div id="footer">
-        </div>
+    <div class="greeting">Chào ngày mới, Hôm nay em yêu định làm gì?<a class="ti-shine"></a>
+        <quote></quote>
     </div>
-    <script src="./main.js"></script>
+    <div id="fullContent">        
+        <div class="todo-container" id="todo-container1">
+        <div class="todo-header">
+          <span contenteditable="true">Todo List 1</span>
+          <button class="delete-list-button" onclick="deleteTodoList('todo-container1')">Delete</button>
+        </div>
+        <ul class="todo-list" id="todo-list1"></ul>
+        <input type="text" class="todo-input" placeholder="Add a new task">
+        <button class="add-button" onclick="addTask('todo-list1', 'todo-container1')">Add Task</button>
+      </div>
+      <button class="new-list-button" onclick="createNewTodoList()">Create New Todo List</button>
+    </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
