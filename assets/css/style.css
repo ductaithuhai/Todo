@@ -1,161 +1,184 @@
 @font-face {
-    font-family: bungee;
-    src: url(/assets/font/BungeeOutline-Regular.ttf);
-}
-@font-face {
-    font-family: alumi;
-    src: url(/assets/font/AlumniSansCollegiateOne-Regular.ttf);
+  font-family: bungee;
+  src: url(/assets/font/BungeeOutline-Regular.ttf);
 }
 
 @font-face {
-    font-family: amatic;
-    src: url(/assets/font/Amatic_SC/AmaticSC-Regular.ttf);
+  font-family: alumi;
+  src: url(/assets/font/AlumniSansCollegiateOne-Regular.ttf);
 }
 
 @font-face {
-    font-family: playball;
-    src: url(/assets/font/Playball/Playball-Regular.ttf);
+  font-family: amatic;
+  src: url(/assets/font/Amatic_SC/AmaticSC-Regular.ttf);
+}
+
+@font-face {
+  font-family: playball;
+  src: url(/assets/font/Playball/Playball-Regular.ttf);
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f6f6f6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-image: linear-gradient(to right, #de6262,  #ffb88c);
-  }
+  font-family: amatic;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(to right, #de6262, #ffb88c);
+}
 
-  .greeting{
-    display: block;
-    position: fixed;
-    top: 20px;
-    font-family: amatic;
-    font-size: 80px;
-    color: white;
-  }
+.greeting {
+  display: block;
+  position: fixed;
+  top: 20px;
+  font-family: amatic;
+  font-size: 80px;
+  color: white;
+}
 
-  #fullContent{
-    width: 80%;
-    height: 700px;
-    display: flex;
-    margin: auto;
-    flex-wrap: wrap;
-    background-color: #fff;
-  }
+#quoteAndImg {
+  display: flex;
+}
 
-  .todo-container {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    width: 350px;
-    height:fit-content;
-    transition: transform 0.3s ease-in-out;
-    margin-right: 20px;
-    position: relative;
-  }
+#motivateQuote {
+  position: fixed;
+  top: 120px;
+  width: auto;
+  height: 100px;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 10px;
+  font-size: 35px;
+  font-family: amatic;
+  color: #3498db;
+  text-align: center;
+}
 
-  .todo-container:hover {
-    transform: scale(1.02);
-  }
+#fullContent {
+  position: fixed;
+  top: 250px;
+  width: 80%;
+  height: 700px;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  overflow: auto;
+}
 
-  .todo-header {
-    background-color: #3498db;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-size: 1.8rem;
-    border-bottom: 2px solid #2980b9;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.todo-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 350px;
+  height: fit-content;
+  transition: transform 0.3s ease-in-out;
+  margin-right: 20px;
+  position: relative;
+}
 
-  .todo-header span {
-    display: inline-block;
-    min-width: 50px; /* Set a minimum width for the editable span */
-    cursor: pointer;
-  }
+.todo-container:hover {
+  transform: scale(1.02);
+}
 
-  .delete-list-button {
-    background-color: #e74c3c;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-    margin-left: 10px;
-    border-radius: 5px;
-  }
+.todo-header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #2980b9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .delete-list-button:hover {
-    background-color: #c0392b;
-  }
+.todo-header span {
+  display: inline-block;
+  min-width: 50px;
+  /* Set a minimum width for the editable span */
+  cursor: pointer;
+}
 
-  .todo-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+.delete-list-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
 
-  .todo-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    border-bottom: 1px solid #eee;
-    transition: background-color 0.3s;
-  }
+.delete-list-button:hover {
+  background-color: #c0392b;
+}
 
-  .todo-item:hover {
-    background-color: #ecf0f1;
-  }
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-  .todo-item input {
-    margin-right: 10px;
-  }
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s;
+}
 
-  .todo-item.completed span {
-    text-decoration: line-through;
-    color: #888;
-  }
+.todo-item:hover {
+  background-color: #ecf0f1;
+}
 
-  .todo-input {
-    width: calc(100% - 30px);
-    padding: 15px;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    border-top: 1px solid #eee;
-  }
+.todo-item input {
+  margin-right: 10px;
+}
 
-  .add-button {
-    width: 100%;
-    padding: 15px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    transition: background-color 0.3s;
-  }
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
 
-  .add-button:hover {
-    background-color: #2980b9;
-  }
+.todo-input {
+  width: calc(100% - 30px);
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-top: 1px solid #eee;
+}
 
-  .new-list-button {
-    background-color: #2ecc71;
-    color: #fff;
-    width: 150px;
-    height:40px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-  }
+.add-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
 
-  .new-list-button:hover {
-    background-color: #27ae60;
-  }
+.add-button:hover {
+  background-color: #2980b9;
+}
+
+.new-list-button {
+  background-color: #2ecc71;
+  color: #fff;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.new-list-button:hover {
+  background-color: #27ae60;
+}

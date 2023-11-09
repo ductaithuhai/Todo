@@ -150,3 +150,56 @@ function deleteTodoList(containerId) {
   const container = document.getElementById(containerId);
   container.remove();
 }
+
+const motivationalQuotes = [
+  `Believe you can and you're halfway there.
+  Tin tưởng em có thể làm được và như vậy em đã thành công một nửa.`,
+  `The only way to do great work is to love what you do.
+  Cách duy nhất để làm tốt công việc chính là  hãy yêu quý công việc mình đang làm.`,
+  `Your time is limited, don't waste it living someone else's life.
+  Thời gian của em là hữu hạn, đừng sống cuộc đời người khác.`,
+  `Success is not final, failure is not fatal: It is the courage to continue that counts.
+  Thành công không phải là tận cùng, thất bại không phải là tận thế: Quan trọng là dũng khí để tiến lên.`,
+  `The future belongs to those who believe in the beauty of their dreams.
+  Tương lai thuộc về những người nhìn thấy vẻ đẹp trong ước mơ của họ.`,
+  `Your life does not get better by chance, it gets better by change.
+  Cuộc sống của em không tốt đẹp lên nhờ cơ hội, nó sẽ tốt đẹp hơn nhờ thay đổi.`,
+  `The only person you are destined to become is the person you decide to be.
+  Con người mà em sẽ trở thành, chính là con người mà em muốn trở thành.`,
+  `Don't watch the clock; do what it does. Keep going.
+  Đừng nhìn theo đồng hồ, hãy làm theo đồng hồ. Tiến về phía trước`,
+  `Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.
+  Hãy luôn tin vào bản thân và những thứ mà em đang có. Hãy luôn nhớ rằng bên trong em sẽ có những thứ lớn lao hơn bất cứ trở ngại nào`,
+  `Success is stumbling from failure to failure with no loss of enthusiasm.
+  Thành công chính là vượt qua từ thất bại này đén thất bại khác nhưng vẫn không đánh mất sự nhiệt huyết`,
+  `It's not about how hard you hit. It's about how hard you can get hit and keep moving forward.
+  Không quan trọng là em đánh mạnh ra sao. Quan trọng là em có thể chịu đựng những đòn mạnh và vẫn tiếp tục bước đi về phía trước`,
+  `You are never too old to set another goal or to dream a new dream.
+  Không bao giờ là quá già để đặt một mục tiêu mới hoặc mơ một giấc mơ mới`,
+  `Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.
+  Đừng để nỗi sợ thúc đẩy em lang thang, hãy để ước mơ dẫn đường em tiến tới`,
+  `Success is not in what you have, but who you are.
+  Thành công không phải là những thứ em đạt được mà chính là con người em sẽ trở thành`,
+  `I find that the harder I work, the more luck I seem to have.
+  Anh nhận ra bản thân anh càng cố gắng, thì anh càng gặp nhiều may mắn`,
+  `You miss 100% of the shots you don't take.
+  Em sẽ thất bại 100% với những việc em không làm`,
+];
+
+function getRandomQuote() {
+  const randomIndex = Math.floor(Math.random() * motivationalQuotes.length);
+  return motivationalQuotes[randomIndex];
+}
+
+function updateMotivationalQuote(containerId) {
+  const quoteElement = document.getElementById(containerId);
+  if (quoteElement) {
+    quoteElement.innerHTML = getRandomQuote().replace(/\n/g, '<br>');
+  }
+}
+
+// Update the quote initially
+updateMotivationalQuote('motivateQuote');
+
+// Update the quote every 15 minutes (900,000 milliseconds)
+setInterval(() => updateMotivationalQuote('mnotivateQuote'), 900000);

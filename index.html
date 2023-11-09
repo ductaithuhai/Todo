@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Daily Note</title>
-        <link rel="icon" href="./assets/img/icon/images (1).png" class="tit-icon">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/css/responsive.css">    
-        <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Daily Note</title>
+      <link
+        rel="icon"
+        type="image/x-icon"
+        href="./assets/themify-icons/SVG/notepad.svg"
+      />
+      <link
+        rel="icon"
+        href="./assets/img/icon/images (1).png"
+        class="tit-icon"
+      />
+      <link rel="stylesheet" href="./assets/css/style.css" />
+      <link rel="stylesheet" href="./assets/css/responsive.css" />
+      <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css" />
     </head>
-</head>
-<body>
-    <div class="greeting">Chào ngày mới, Hôm nay em yêu định làm gì?<a class="ti-shine"></a>
-        <quote></quote>
+  </head>
+  <body>
+    <div class="greeting">
+      Chào ngày mới, Hôm nay em yêu định làm gì?<a class="ti-shine"></a>
     </div>
-    <div id="fullContent">        
-        <div class="todo-container" id="todo-container1">
+    <div id="motivateQuote"></div>
+    <div id="fullContent">
+      <div class="todo-container" id="todo-container1">
         <div class="todo-header">
           <span contenteditable="true">Todo List 1</span>
-          <button class="delete-list-button" onclick="deleteTodoList('todo-container1')">Delete</button>
+          <button
+            class="delete-list-button"
+            onclick="deleteTodoList('todo-container1')"
+          >
+            Delete
+          </button>
         </div>
         <ul class="todo-list" id="todo-list1"></ul>
-        <input type="text" class="todo-input" placeholder="Add a new task">
-        <button class="add-button" onclick="addTask('todo-list1', 'todo-container1')">Add Task</button>
+        <input type="text" class="todo-input" placeholder="Add a new task" />
+        <button
+          class="add-button"
+          onclick="addTask('todo-list1', 'todo-container1')"
+        >
+          Add Task
+        </button>
       </div>
-      <button class="new-list-button" onclick="createNewTodoList()">Create New Todo List</button>
+      <button class="new-list-button" onclick="createNewTodoList()">
+        Create New Todo List
+      </button>
     </div>
     <script src="./assets/js/main.js"></script>
-</body>
+  </body>
 </html>
