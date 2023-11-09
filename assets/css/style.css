@@ -1,21 +1,21 @@
 @font-face {
   font-family: bungee;
-  src: url(./font/BungeeOutline-Regular.ttf);
+  src: url(../font/BungeeOutline-Regular.ttf);
 }
 
 @font-face {
   font-family: alumi;
-  src: url(./font/AlumniSansCollegiateOne-Regular.ttf);
+  src: url(../font/AlumniSansCollegiateOne-Regular.ttf);
 }
 
 @font-face {
   font-family: amatic;
-  src: url(./font/Amatic_SC/AmaticSC-Regular.ttf);
+  src: url(../font/Amatic_SC/AmaticSC-Regular.ttf);
 }
 
 @font-face {
   font-family: playball;
-  src: url(./font/Playball/Playball-Regular.ttf);
+  src: url(../font/Playball/Playball-Regular.ttf);
 }
 
 body {
