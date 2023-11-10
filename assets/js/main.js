@@ -202,4 +202,4 @@ function updateMotivationalQuote(containerId) {
 updateMotivationalQuote('motivateQuote');
 
 // Update the quote every 15 minutes (900,000 milliseconds)
-setInterval(() => updateMotivationalQuote('mnotivateQuote'), 900000);
+setInterval(() => updateMotivationalQuote('motivateQuote'), 900000);
